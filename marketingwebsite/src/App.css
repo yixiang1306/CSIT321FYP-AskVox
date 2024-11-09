@@ -137,24 +137,52 @@ html {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*                                                  Hero Section                                                                       */
+/*                                                         Hero Section                                                                */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
-/* F5F8FA this colour to be used for hero section*/
+.hero-section-container {
+  display: flex;
+  flex-direction: row;           /* Arrange items horizontally */
+  align-items: center;           /* Center items vertically */
+  justify-content: space-between; /* Space between text and image */
+  padding: 100px 100px;
+  background-color: #ffffff;
+}
+
 .hero {
-  text-align: left;
-  margin-top: 40px;
+  display: flex;
+  flex-direction: column;        /* Stack heading and paragraph vertically */
+  align-items: flex-start;       /* Align text to the left */
+  padding-left: 200px;
+}
+
+.hero h1 {
+  font-size: 8rem;
+  font-weight: bold;
+  color: #33475B;
+  margin: 0;
 }
 
 .hero h1 span {
-  color: #4C4DBC;
+  color: #6666FF;
 }
 
+.hero p {
+  font-size: 1.25rem;
+  max-width: 450px;             /* Limit paragraph width */
+  margin-top: 10px;
+}
 
-.image-section {
-  margin-top: 40px;
-  padding: 20px;
+.hero-image {
+  max-width: 45%;               /* Limit image size */
+}
+
+.hero-image img {
+  width: 100%;                  /* Ensure image fits container */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 

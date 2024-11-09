@@ -1,16 +1,15 @@
 import React from 'react';
 import Header from './Header';
-import HeroSection from './HeroSection';
-import ImageSection from './ImageSection';
 import Footer from './Footer';
+import HeroSection from './HeroSection';
 import './App.css';
+
 
 const App = () => (
   <div>
     <Header />
     <main>
       <HeroSection />
-      <ImageSection />
 
       <section id="about">
         <h2>About Us</h2>
