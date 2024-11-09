@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
+import Header from './Header';
+import HeroSection from './HeroSection';
+import ImageSection from './ImageSection';
+import Footer from './Footer';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div>
+    <Header />
+    <main>
+      <HeroSection />
+      <ImageSection />
+
+      <section id="about">
+        <h2>About Us</h2>
+        <p>Information about AskVox...</p>
+      </section>
+      <section id="features">
+        <h2>Features</h2>
+        <p>Features of AskVox...</p>
+      </section>
+      <section id="plans">
+        <h2>Plans</h2>
+        <p>Subscription plans for AskVox...</p>
+      </section>
+      </main>
+    <Footer />
+  </div>
+);
 
 export default App;
