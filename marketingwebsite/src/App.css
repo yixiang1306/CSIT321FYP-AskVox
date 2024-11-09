@@ -71,11 +71,15 @@ html {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/*                                                Mobile View (Header) - Dropdown Menu                                                 */
+/*                                                       Mobile View (Header)                                                          */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* Hide the navigation menu by default on mobile */
 @media (max-width: 768px) {
+  .header-logo{
+    padding-left: 50px;
+  }
+
   .header-content ul {
     display: none;   /* Hide navigation on smaller screens */
     flex-direction: column; /* Stack the links vertically */
@@ -141,7 +145,7 @@ html {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
-.hero-section-container {
+.hero {
   display: flex;
   flex-direction: row;           /* Arrange items horizontally */
   align-items: center;           /* Center items vertically */
@@ -150,32 +154,36 @@ html {
   background-color: #ffffff;
 }
 
-.hero {
+.hero-text {
   display: flex;
   flex-direction: column;        /* Stack heading and paragraph vertically */
   align-items: flex-start;       /* Align text to the left */
   padding-left: 200px;
+  padding-right: 50px;
+  text-align: center;
 }
 
-.hero h1 {
-  font-size: 8rem;
+.hero-text h1 {
+  font-size: 100px;
   font-weight: bold;
   color: #33475B;
   margin: 0;
 }
 
-.hero h1 span {
+.hero-text h1 span {
   color: #6666FF;
 }
 
-.hero p {
-  font-size: 1.25rem;
+.hero-text p {
+  font-size: 20px;
   max-width: 450px;             /* Limit paragraph width */
   margin-top: 10px;
 }
 
 .hero-image {
-  max-width: 45%;               /* Limit image size */
+  width: 500px;                /* Set a fixed width for the image */
+  height: auto;                /* Ensure image maintains aspect ratio */
+  padding: 20px;
 }
 
 .hero-image img {
@@ -185,6 +193,70 @@ html {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*                                                    Mobile View (HeroSection)                                                        */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media (max-width: 1280px) {
+
+  .hero-text {
+    align-items: center;              /* Center text horizontally */
+    padding-left: 100px;
+  }
+
+
+  .hero h1 {
+    font-size: 80px;                  /* Smaller font size for mobile */
+  }
+
+  .hero p {
+    font-size: 18px;                  /* Smaller font size for mobile */
+    
+  }
+}
+
+@media (max-width: 1040px) {
+
+  .hero-text {
+    align-items: center;              /* Center text horizontally */
+    padding-left: 80px;
+  }
+
+
+  .hero h1 {
+    font-size: 70px;                  /* Smaller font size for mobile */
+  }
+
+  .hero p {
+    font-size: 15px;                  /* Smaller font size for mobile */
+  }
+}
+
+@media (max-width: 908px) {
+  .hero {
+    flex-direction: column;           /* Stack text and image vertically */
+    align-items: center;              /* Center everything */
+    padding: 50px 20px;
+  }
+
+  .hero-text {
+    align-items: center;              /* Center text horizontally */
+    padding-left: 50px;
+  }
+
+
+  .hero h1 {
+    font-size: 50px;                  /* Smaller font size for mobile */
+  }
+
+  .hero p {
+    font-size: 12px;                  /* Smaller font size for mobile */
+  }
+
+  .hero-image {
+    display: none;                    /* Hide image on small screens */
+  }
+}
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
