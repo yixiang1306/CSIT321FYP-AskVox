@@ -157,10 +157,12 @@ html {
 .hero-text {
   display: flex;
   flex-direction: column;        /* Stack heading and paragraph vertically */
-  align-items: flex-start;       /* Align text to the left */
+  align-items: center;       /* Align text to the left */
+  justify-content: center;
   padding-left: 200px;
   padding-right: 50px;
   text-align: center;
+  max-width: 450px;
 }
 
 .hero-text h1 {
@@ -168,6 +170,7 @@ html {
   font-weight: bold;
   color: #33475B;
   margin: 0;
+  max-width: 100%;
 }
 
 .hero-text h1 span {
@@ -176,7 +179,7 @@ html {
 
 .hero-text p {
   font-size: 20px;
-  max-width: 450px;             /* Limit paragraph width */
+  max-width: 100%;
   margin-top: 10px;
 }
 
@@ -206,7 +209,7 @@ html {
 
 
   .hero h1 {
-    font-size: 80px;                  /* Smaller font size for mobile */
+    font-size: 75px;                  /* Smaller font size for mobile */
   }
 
   .hero p {
@@ -215,7 +218,7 @@ html {
   }
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1024px) {
 
   .hero-text {
     align-items: center;              /* Center text horizontally */
