@@ -22,9 +22,13 @@ const App = () => (
       </section>
       <section id="plans">
         <h2>Plans</h2>
-        <p>Subscription plans for AskVox...</p>
+        <p>Subscription plans for AskVox... </p>
+
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+
       </section>
-      </main>
+    </main>
     <Footer />
   </div>
 );
